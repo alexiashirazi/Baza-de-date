@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectbdfx1.colegiStudent">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="350.0" style="-fx-background-color: #be0000;">
+         <children>
+            <ImageView fitHeight="300.0" fitWidth="350.0" layoutX="-4.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Alexia/Desktop/UTCN/bd/ProiectBdFX1/src/main/java/com/example/proiectbdfx1/img/user.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="65.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="LogOut" layoutX="1036.0" layoutY="634.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="40.0" prefWidth="150.0" stylesheets="@profesor.css" text="Log out" textFill="WHITE">
+         <font>
+            <Font name="SimSun-ExtB" size="25.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tabel" layoutX="355.0" layoutY="65.0" prefHeight="566.0" prefWidth="837.0">
+         <columns>
+            <TableColumn fx:id="nume" minWidth="269.0" prefWidth="75.0" text="Nume" />
+            <TableColumn fx:id="prenume" minWidth="269.0" prefWidth="100.0" text="Prenume" />
+            <TableColumn fx:id="anDeStudiu" minWidth="269.0" prefWidth="100.0" text="AnDeStudiu" />
+         </columns>
+      </TableView>
+      <TextField fx:id="searchBar" layoutX="390.0" layoutY="24.0" prefHeight="25.0" prefWidth="200.0" promptText=" search here..." />
+      <Button fx:id="cauta" layoutX="622.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleCauta" prefHeight="19.0" prefWidth="61.0" text="cauta" />
+      <ScrollPane layoutX="2.0" layoutY="369.0" prefHeight="323.0" prefWidth="350.0" style="-fx-background-color: #bf0000;" stylesheets="@student.css">
+         <content>
+            <VBox alignment="CENTER" layoutX="2.0" layoutY="369.0" prefHeight="374.0" prefWidth="332.0" style="-fx-background-color: #bf0000;" stylesheets="@profesor.css">
+               <children>
+                  <Button fx:id="Calendar" mnemonicParsing="false" onAction="#handleCalendarButton" prefHeight="100.0" prefWidth="200.0" stylesheets="@profesor.css" text="Calendar" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SimSun-ExtB" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Students" mnemonicParsing="false" onAction="#handleStudentsButton" prefHeight="100.0" prefWidth="200.0" text="Students" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SimSun-ExtB" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Teachers" mnemonicParsing="false" onAction="#handleTeachersButton" prefHeight="100.0" prefWidth="200.0" text="Teachers" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SimSun-ExtB" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Gradebook" mnemonicParsing="false" onAction="#handleGradebookButton" prefHeight="100.0" prefWidth="200.0" text="Gradebook" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SimSun-ExtB" size="26.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="AboutYou" mnemonicParsing="false" onAction="#handleAboutYouButton" prefHeight="100.0" prefWidth="200.0" text="About you" textFill="WHITE">
+                     <font>
+                        <Font name="SimSun-ExtB" size="26.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="Chat" mnemonicParsing="false" onAction="#handleChatButton" prefHeight="100.0" prefWidth="200.0" text="Chat" textFill="WHITE">
+                     <font>
+                        <Font name="SimSun-ExtB" size="27.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,12 @@
+/* custom-alert.css */
+.error-alert {
+    -fx-font-size: 18;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+    -fx-background-color: #FFFFFF; /* Background color for Bootstrap's danger alert */
+}
+
+.error-alert .dialog-pane {
+    -fx-border-color: red; /* Border color for Bootstrap's danger alert */
+}

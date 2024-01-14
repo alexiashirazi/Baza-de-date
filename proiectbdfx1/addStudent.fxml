@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="232.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectbdfx1.AddStudentController">
+    <TextField fx:id="nameField" promptText="Name" />
+    <TextField fx:id="prenumeField" promptText="Prenume" />
+    <TextField fx:id="andestudentField" promptText="AnDeStudiu" />
+    <TextField fx:id="cnpField" promptText="CNP" />
+    <TextField fx:id="addressField" promptText="Adresa" />
+    <TextField fx:id="nrDETelefonlField" promptText="NrDeTelefon" />
+    <TextField fx:id="emailField" promptText="Email" />
+    <TextField fx:id="ibanField" promptText="IBAN " />
+
+    <Button onAction="#handleAddStudent" text="Add Student" />
+</VBox>

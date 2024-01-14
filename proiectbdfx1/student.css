@@ -1,0 +1,62 @@
+/* Add these styles to profesor.css */
+
+.button
+{
+    -fx-background-color:  #1d1552;
+    -fx-alignment: center;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.button:hover
+{
+    -fx-background-color: #3224b2;
+    -fx-alignment: center;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.button:pressed
+{
+    -fx-background-color:  #270d4a;
+    -fx-alignment: center;
+    -fx-background-radius: 30 30 30 30;
+}
+
+
+/* Add these styles to profesor.css */
+
+#scroll-pane {
+    -fx-background-color: #bf0000; /* Background color of the ScrollPane */
+}
+
+.scroll-bar {
+    -fx-background-color: #be0000; /* Background color of the scrollbar */
+    -fx-border-color: #be0000; /* Border color of the scrollbar */
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: #be0000; /* Background color of the vertical scrollbar track */
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: #be0000; /* Background color of the horizontal scrollbar track */
+}
+
+.scroll-bar-thumb {
+    -fx-background-color: #be0000; /* Color of the thumb (the draggable part of the scrollbar) */
+}
+
+.scroll-bar-thumb:hover {
+    -fx-background-color: #be0000; /* Color of the thumb when hovered */
+}
+
+.scroll-bar-thumb:pressed {
+    -fx-background-color: #be0000; /* Color of the thumb when pressed */
+}
+
+.scroll-bar-track {
+    -fx-background-color: #be0000; /* Background color of the scrollbar track */
+}
+
+.scroll-bar-track:hover {
+    -fx-background-color: #be0000; /* Background color of the track when hovered */
+}

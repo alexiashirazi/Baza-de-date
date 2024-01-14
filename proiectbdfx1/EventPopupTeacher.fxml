@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proiectbdfx1.EventPopupControllerTeacher">
+    <children>
+        <TextField fx:id="eventNameField" promptText="Event Name"/>
+        <TextField fx:id="eventTimeField" promptText="Event Time"/>
+        <Button onAction="#handleSaveEvent" text="Save"/>
+        <Button onAction="#handleCancel" text="Cancel"/>
+    </children>
+</VBox>
